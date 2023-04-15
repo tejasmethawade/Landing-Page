@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    background-color: #210D26;
+    padding: 13vh 10vw;
+
+    color: white;
+}
+.desc{
+    margin-top: 5vh;
+    margin-right: 3vw;
+}
+
+.responsive{
+    width: 50%;
+    height: auto;
+}
+
+@media only screen and (max-width:1110px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .vector-img img{
+        width: 90%;
+    }
+}

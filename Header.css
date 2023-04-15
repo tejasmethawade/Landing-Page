@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 7vh;
+    /* height: 20px; */
+    background-color: #150419d9;
+    padding: 3vh 10vh;
+    align-items: center;
+    position: fixed;
+    box-shadow: rgba(147, 142, 142, 0.925) 0px 3px 8px;
+}
+
+.header-logo{
+    margin-right:6vw;
+}
+
+.nav-menu{
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: auto 1vw;
+}
+
+nav ul li a{
+    color: white;
+    font-size: large;
+    font-weight:400;
+}
+
+.header-tabs{
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons{
+    display: flex;
+    margin-left: 6vw;
+}
+
+.btn-dash{
+    cursor: pointer;
+    margin-right: 1vw;
+    padding: 9px 25px;
+    font-size: 200;
+    background-color: #150419;
+    border: 1px solid#29347A;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.btn-login{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 1vw;
+    padding: 9px 25px;
+    background: #29347A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+} 
+
+.hamburger{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-nav-btn[name="close-outline"]{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1110px) {
+    
+    .body{
+        overflow-x: hidden;
+    }
+    .header{
+        display: flex;
+    }
+    .header-logo{
+        float: left;
+    }
+    .header-tabs{
+        width: 50vw;
+        height: 50vh;
+        top: -800%;
+        left: 25vw;
+        background-color: #150419;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin: auto auto;
+        transition: 0.2s ease;
+    }
+    .header-tabs-active{
+        position: absolute;
+        width: 50vw;
+        height: 50vh;
+        top: 100%;
+        left: 25vw;
+        background-color: #150419;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        margin: auto auto;
+        transition: 0.2s ease;
+    }
+
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .hamburger{
+        display: block;
+        float: right;
+    }
+}
